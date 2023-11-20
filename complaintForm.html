@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add custom styles here */
+        body {
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Complaint Registration Form</h2>
+        <form style="max-width: 480px;margin: auto;" action="http://localhost:3000/complaint_form" method="post">
+            <div class="form-group">
+                <label for="rollno">Roll Number:</label>
+                <input type="text" name="rollNo" class="form-control" id="name" placeholder="Enter your Roll number" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Mobile Number:</label>
+                <input type="text" name="phNo" class="form-control" id="ph-no" placeholder="Enter your mobile number" required>
+            </div>
+            <div class="form-group">
+                <label>Location:</label>
+                <input type="text" name="location" class="form-control" id="location" placeholder="Enter your Location" required>
+            </div>
+            <div class="form-group">
+
+                <label for="complaint">Complaint:</label>
+                <input type="text" name="complaint" class="form-control" id="complaint" placeholder="No Internet/Weak Signal/Unstable Connection" required>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
